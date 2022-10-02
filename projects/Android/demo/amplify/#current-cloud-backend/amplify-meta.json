@@ -1,0 +1,223 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-mechgestured-mechdevvv-204609-authRole",
+			"UnauthRoleArn": "arn:aws:iam::159291355821:role/amplify-mechgestured-mechdevvv-204609-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::159291355821:role/amplify-mechgestured-mechdevvv-204609-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-mechgestured-mechdevvv-204609-deployment",
+			"UnauthRoleName": "amplify-mechgestured-mechdevvv-204609-unauthRole",
+			"StackName": "amplify-mechgestured-mechdevvv-204609",
+			"StackId": "arn:aws:cloudformation:us-east-1:159291355821:stack/amplify-mechgestured-mechdevvv-204609/c3dc6b40-5cc4-11eb-9610-0a6329bdd2f1",
+			"AmplifyAppId": "d11yrno4gooow"
+		}
+	},
+	"auth": {
+		"mechgesturedacff31fb": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/auth/mechgesturedacff31fb-cloudformation-template.yml",
+				"logicalId": "authmechgesturedacff31fb"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.072Z",
+			"output": {
+				"AppClientSecret": "nqt3qm08gdg96nkt2e5fl37kbdc1bp4trm5gdah2bs59d6nraes",
+				"UserPoolId": "us-east-1_xDC12RXlv",
+				"AppClientIDWeb": "754s9kf1fli4cnvqv0plihppia",
+				"AppClientID": "5rc1ek2f07mtf4t4glc87hr8m2",
+				"IdentityPoolId": "us-east-1:8c3440d1-35c1-4fdb-a8a7-2f13296d86f2",
+				"IdentityPoolName": "mechgesturedacff31fb_identitypool_acff31fb__mechdevvv",
+				"UserPoolName": "mechgesturedacff31fb_userpool_acff31fb"
+			},
+			"lastPushDirHash": "8l09o+c3Au5QQKSIQIuNkwUmOdk="
+		}
+	},
+	"function": {
+		"loginfunction": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2021-01-23T09:53:29.025Z",
+			"lastPackageTimeStamp": "2021-01-23T09:53:29.095Z",
+			"distZipFilename": "loginfunction-345162785646784c4f37-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/function/loginfunction-cloudformation-template.json",
+				"logicalId": "functionloginfunction"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.074Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:159291355821:function:loginfunction-mechdevvv",
+				"Name": "loginfunction-mechdevvv",
+				"LambdaExecutionRole": "mechgesturedLambdaRole9bc812a4-mechdevvv"
+			},
+			"lastPushDirHash": "EdAiURYJ65WfDUsPjooZdBQHzHo="
+		},
+		"greetingfunc": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2021-01-23T10:05:37.041Z",
+			"lastPackageTimeStamp": "2021-01-23T10:05:37.092Z",
+			"distZipFilename": "greetingfunc-79316856635037485a41-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/function/greetingfunc-cloudformation-template.json",
+				"logicalId": "functiongreetingfunc"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.076Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:159291355821:function:greetingfunc-mechdevvv",
+				"Name": "greetingfunc-mechdevvv",
+				"LambdaExecutionRole": "mechgesturedLambdaRoled443e3f6-mechdevvv"
+			},
+			"lastPushDirHash": "9ZLx9hIwRFNfNLbkOZFQizLVmbU="
+		},
+		"mechdevbackend": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2021-01-23T18:41:36.148Z",
+			"lastPackageTimeStamp": "2021-01-23T18:41:37.678Z",
+			"distZipFilename": "mechdevbackend-365768397936694b6766-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/function/mechdevbackend-cloudformation-template.json",
+				"logicalId": "functionmechdevbackend"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.078Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:159291355821:function:mechdevbackend-mechdevvv",
+				"Name": "mechdevbackend-mechdevvv",
+				"LambdaExecutionRole": "mechgesturedLambdaRolec94d4b06-mechdevvv"
+			},
+			"lastPushDirHash": "yTR2kJu6BTuZGILhvH2Wq2YLWaU="
+		},
+		"demolamda": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [],
+			"lastBuildTimeStamp": "2021-01-25T15:42:22.549Z",
+			"lastPackageTimeStamp": "2021-01-25T15:42:23.174Z",
+			"distZipFilename": "demolamda-363276476a2b49695159-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/function/demolamda-cloudformation-template.json",
+				"logicalId": "functiondemolamda"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.098Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:159291355821:function:demolamda-mechdevvv",
+				"Name": "demolamda-mechdevvv",
+				"LambdaExecutionRole": "mechgesturedLambdaRole678669f2-mechdevvv"
+			},
+			"lastPushDirHash": "zWjzm6nUmMXmOlHiGPNYXHVl+ms="
+		}
+	},
+	"api": {
+		"loginApi": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "loginfunction",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/api/loginApi-cloudformation-template.json",
+				"logicalId": "apiloginApi"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.083Z",
+			"output": {
+				"ApiName": "loginApi",
+				"RootUrl": "https://og772d08i1.execute-api.us-east-1.amazonaws.com/mechdevvv",
+				"ApiId": "og772d08i1"
+			},
+			"lastPushDirHash": "i3aZtRN9lW4+0jKt/bPVKj7e6Hg="
+		},
+		"greetingapi": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "greetingfunc",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/api/greetingapi-cloudformation-template.json",
+				"logicalId": "apigreetingapi"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.085Z",
+			"output": {
+				"ApiName": "greetingapi",
+				"RootUrl": "https://jqfx0c1pe2.execute-api.us-east-1.amazonaws.com/mechdevvv",
+				"ApiId": "jqfx0c1pe2"
+			},
+			"lastPushDirHash": "QfdBLNf+v1bBT1IvHhh+fuxMngE="
+		},
+		"expressbackendmechdev": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "mechdevbackend",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/api/expressbackendmechdev-cloudformation-template.json",
+				"logicalId": "apiexpressbackendmechdev"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.087Z",
+			"output": {
+				"ApiName": "expressbackendmechdev",
+				"RootUrl": "https://17p7g7o4w1.execute-api.us-east-1.amazonaws.com/mechdevvv",
+				"ApiId": "17p7g7o4w1"
+			},
+			"lastPushDirHash": "xjOXa8jV8Q8bBbMQo7Wl1PeJnSA="
+		},
+		"demo": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "demolamda",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-mechgestured-mechdevvv-204609-deployment/amplify-cfn-templates/api/demo-cloudformation-template.json",
+				"logicalId": "apidemo"
+			},
+			"lastPushTimeStamp": "2021-01-25T15:44:09.098Z",
+			"output": {
+				"ApiName": "demo",
+				"RootUrl": "https://n2uu0hanj6.execute-api.us-east-1.amazonaws.com/mechdevvv",
+				"ApiId": "n2uu0hanj6"
+			},
+			"lastPushDirHash": "0jbNhVB2Vynnl1jT6xw+xJaMnxg="
+		}
+	}
+}

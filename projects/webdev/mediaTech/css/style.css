@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+/*
+font used...
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+ */
+:root {
+    --font: 'Ubuntu', 'sans-serif';
+    --font2: 'Poppins', 'sans-serif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.4%;
+
+}
+
+.app {
+    background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+    z-index: 1;
+}
+
+.max-width {
+    max-width: 100%;
+}
+
+.navbar .max-width {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu {
+
+}
+
+.nav i {
+    font-size: 2rem;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    padding: 25px 0;
+    z-index: 999;
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .brand_logo a {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.31rem;
+}
+
+.navbar .brand_logo a span {
+    color: #203a43;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+
+}
+
+.navbar .logo span {
+    color: #56ab2f;
+}
+
+.navbar .menu li a:hover {
+    color: #56ab2f;
+}
+
+.navbar .menu li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-left: 5rem;
+
+}
+
+.navbar .menu li a:after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+    background: #aaa;
+    height: 2px;
+    transition: all 0.8s ease;
+}
+
+.navbar .menu li:hover a:after {
+    width: 100%;
+}
+
+.mobile_btn {
+    display: none;
+}
+
+/*home*/
+
+.home {
+    display: flex;
+    height: 100vh;
+    background: url("../assets/bubble.png");
+
+}
+
+.home .max-width {
+    margin: auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .main-heading {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--font);
+}
+
+.home .sub-heading {
+    padding: 4rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2.5rem;
+    font-family: var(--font);
+}
+
+.home-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: var(--font);
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(to left, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home-btn:hover {
+    border: 2px solid #56ab2f;
+    background: #203a43;
+}
+
+.col-left {
+    margin-top: 3rem;
+    max-width: 40%;
+}
+
+.col-right .home-img-container {
+    width: 30rem;
+}
+
+/*our Department*/
+
+
+.ourDepartment:before {
+
+    width: 100%;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+    position: absolute;
+    content: '';
+    background: url(../assets/b4.png);
+}
+
+.ourDepartment .max-width {
+    padding: 3rem;
+    text-align: center;
+}
+
+.ourDepartment .main-heading, .products .main-heading, .contact .main-heading {
+    font-size: 3rem;
+    color: #fff;
+    font-family: var(--font);
+}
+
+i {
+    font-size: 3rem;
+}
+
+.content {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-rows: 10rem 10rem;
+    grid-template-columns: repeat(4, 10rem);
+    row-gap: 10rem;
+    justify-content: center;
+    column-gap: 13rem;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: #56ab2f;
+    transition: all 0.4s ease;
+}
+
+.box:hover {
+    background: white;
+    box-shadow: #51544f 0px 8px 24px;
+    transform: scale(1.1);
+}
+
+.box span {
+    font-size: 2rem;
+    padding: 2rem 0;
+    position: absolute;
+    font-family: var(--font);
+    color: #fff;
+    top: 100%;
+}
+
+
+/*products*/
+
+.products .max-width {
+    padding: 5rem;
+    text-align: center;
+
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 6rem;
+}
+
+.item {
+    width: 25rem;
+    height: auto;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 12rem;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.owl-next {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    outline: none;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    outline: none;
+
+}
+
+.product-btn {
+    display: inline-block;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+    color: #56ab2f;
+    font-family: var(--font);
+}
+
+/*package*/
+.package {
+    background-color: white;
+
+    overflow: hidden
+}
+
+.package .topSection {
+    height: 70vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.package .lowerSection {
+    width: 100%;
+}
+
+.package .col-left {
+    margin: auto 10rem;
+    width: 40rem;
+
+}
+
+.package .col-left .label {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: #56ab2f;
+}
+
+.lowerSection {
+    height: 60vh;
+    overflow: hidden;
+}
+
+.lowerSection img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: -52%;
+}
+
+.package .col-left .main-heading {
+    padding: 3rem 0;
+    font-size: 3rem;
+    font-family: var(--font2);
+    font-weight: bold;
+}
+
+.package .col-left .sub-heading {
+    font-size: 1.5rem;
+    padding: 3rem 0;
+
+}
+
+.package .col-left .package-btn {
+    font-size: 1.5rem;
+    color: #56ab2f;
+    padding: 3rem 0;
+
+}
+
+.package .col-right img {
+    width: 60rem;
+    height: 100%;
+}
+
+/*contact*/
+/*.contact::before {*/
+/*    background: url("../assets/b2.png");*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: -webkit-fill-available;*/
+/*    height: -moz-available;*/
+/*    height: fill-available;*/
+/*    z-index: 1;*/
+/*}*/
+
+
+.contact .max-width {
+    z-index: 2;
+
+    padding: 6rem 8rem;
+    text-align: center;
+    width: 100%;
+}
+
+.mailus {
+    margin-top: 6rem;
+    display: inline-block;
+    padding: 4rem 5rem;
+    background: #485563;
+    border-radius: 2rem;
+}
+
+.mail-label {
+    color: #fff;
+    font-size: 2rem;
+    font-family: var(--font2);
+    padding-bottom: 2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.mailus input {
+    padding: 2rem 2rem;
+    width: 35rem;
+    height: 6rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    font-size: 1.8rem;
+}
+
+.mailus span a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 2.2rem 6rem;
+    font-family: var(--font);
+    background: #203a43;
+    border-radius: 0 2rem 2rem 0;
+}
+
+
+/*contact bottom section*/
+.contact-bottom-section {
+    text-align: left;
+    font-family: var(--font2);
+    padding: 8rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-area > ul {
+    list-style: none;
+}
+
+.area-heading {
+
+    width: 30%;
+}
+
+.contact-bottom-section .brand_logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contact-bottom-section .brand_logo span {
+    color: #968484;
+}
+
+.contact-bottom-section .c1-content {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.contact-link {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.info-link {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.info-link2 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.info-container li:nth-child(3) {
+    margin-top: 3rem;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+/*mediaQueries*/
+
+/*small screens laptops*/
+
+
+/*extra large screen like tv*/
+@media (max-width: 1201px) {
+
+}
+
+/*Desktop ,large screens*/
+@media (max-width: 1025px) {
+
+    .home .main-heading {
+        font-size: 4.5rem;
+    }
+
+    .package .col-left {
+        margin: auto 4rem;
+    }
+
+    .contact .max-width {
+        padding: 6rem 2rem;
+    }
+
+    .item {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .home .main-heading {
+        font-size: 3rem;
+    }
+
+    .col-right .home-img-container {
+        width: 20rem;
+    }
+
+    .home-btn {
+        font-size: 1.3rem;
+        padding: 1.3rem 3.5rem;
+
+    }
+
+    .package .col-right {
+        width: 50%;
+    }
+
+    .package .topSection {
+        height: 60vh;
+
+    }
+
+    .lowerSection {
+        height: 35vh;
+    }
+
+    .package .topSection img {
+        width: 100%;
+    }
+
+    .contact-bottom-section .c1-content {
+        font-size: 1.2rem;
+    }
+
+    .area-heading {
+        width: 40%;
+    }
+
+    .contact-link {
+        font-size: 1.3rem;
+    }
+
+    .info-link {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        grid-template-rows: 10rem 10rem 10rem;
+        grid-template-columns: repeat(3, 10rem);
+    }
+
+    .owl-carousel .owl-item {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mobile_btn {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .navbar-hide {
+        height: 100vh;
+        background: #2c5364;
+    }
+
+    .navbar .menu {
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        height: 100vh;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav-hide {
+        display: none !important;
+
+    }
+
+    .navbar .menu li {
+        text-align: center;
+        padding: 4rem 0;
+        margin: 0;
+        display: block;
+    }
+
+    .mailus {
+        padding: 3rem 2rem;
+    }
+
+    .mailus input {
+        width: 25rem;
+        height: 5rem;
+    }
+
+    .mailus span a {
+        padding: 1.8rem 4rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .content {
+        column-gap: 7rem;
+    }
+
+    .package .col-left .main-heading {
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+
+    .package .col-left .sub-heading {
+        padding: 2.5rem 0;
+    }
+
+    .contact-bottom-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home {
+        height: auto;
+
+    }
+
+    .package .col-right {
+        display: none;
+    }
+
+    .package .col-left .main-heading {
+        font-size: 2rem;
+        padding: 0;
+
+    }
+
+    .package .col-left .package-btn {
+        padding: 0;
+    }
+
+    .lowerSection img {
+        top: 0
+    }
+
+    .area-heading {
+        width: 90%;
+    }
+
+    .package .col-left {
+        width: fit-content;
+    }
+
+    .col-left {
+        max-width: none;
+    }
+
+    .content {
+        grid-template-columns: repeat(3, 8rem);
+        grid-template-rows: repeat(3, 8rem);
+    }
+
+    .home .max-width {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .col-left {
+        margin-top: 7rem;
+        max-width: fit-content;
+        padding: 2rem 5rem;
+
+    }
+
+    .home .col-right {
+        padding-top: 3rem;
+    }
+
+    .mailus span a {
+        padding: 1.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .mailus {
+        padding: 2rem 1rem;
+    }
+
+    .mailus input {
+        width: 23rem;
+        height: 4rem;
+    }
+
+    .mailus input::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .mail-label {
+        font-size: 1.5rem;
+    }
+
+    .contact .max-width {
+        padding: 6rem 0rem;
+    }
+
+    .mailus span a {
+        padding: 1.4rem 3rem;
+        font-size: 1rem;
+    }
+}
+
+/*mobile devices*/
+@media (max-width: 320px) {
+    .home .max-width {
+        flex-direction: column;
+
+    }
+
+    .content {
+        grid-template-columns: repeat(2, 8rem);
+        grid-template-rows: repeat(4, 8rem);
+    }
+
+    .mailus span a {
+        padding: 1.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .mailus {
+        padding: 2rem 1rem;
+    }
+
+    .mailus input {
+        width: 20rem;
+        height: 4rem;
+    }
+
+    .mail-label {
+        font-size: 1.5rem;
+    }
+
+    .contact .max-width {
+        padding: 6rem 0rem;
+    }
+
+    .mailus span a {
+        padding: 1.4rem 2rem;
+        font-size: 1rem;
+    }
+}

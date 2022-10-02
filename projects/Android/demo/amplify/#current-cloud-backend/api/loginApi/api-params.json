@@ -1,0 +1,49 @@
+{
+    "paths": [
+        {
+            "name": "/login",
+            "lambdaFunction": "loginfunction",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/login"
+        }
+    ],
+    "resourceName": "loginApi",
+    "apiName": "loginApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "loginfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-mechgestured-mechdevvv-204609-authRole",
+        "unAuthRoleName": "amplify-mechgestured-mechdevvv-204609-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "loginfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "310807201554",
+    "project_id": "namma-mechanics",
+    "storage_bucket": "namma-mechanics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310807201554:android:53e410213a0f567da555cb",
+        "android_client_info": {
+          "package_name": "com.example.MechGesture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310807201554-8co73mdi66k6v7q19r0heaculps1g3sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAzjl4X77OJiJlzKe1g4F1_MxFRjfa0C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310807201554-8co73mdi66k6v7q19r0heaculps1g3sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

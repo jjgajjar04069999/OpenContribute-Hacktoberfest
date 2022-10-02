@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/demoo",
+            "lambdaFunction": "demolamda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "demo",
+    "apiName": "demo",
+    "functionArns": [
+        {
+            "lambdaFunction": "demolamda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-mechgestured-mechdevvv-204609-authRole",
+        "unAuthRoleName": "amplify-mechgestured-mechdevvv-204609-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "demolamda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

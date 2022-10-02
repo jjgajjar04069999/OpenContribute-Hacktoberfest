@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/completeBackend",
+            "lambdaFunction": "mechdevbackend",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/completeBackend"
+        }
+    ],
+    "resourceName": "expressbackendmechdev",
+    "apiName": "expressbackendmechdev",
+    "functionArns": [
+        {
+            "lambdaFunction": "mechdevbackend"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-mechgestured-mechdevvv-204609-authRole",
+        "unAuthRoleName": "amplify-mechgestured-mechdevvv-204609-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mechdevbackend",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
