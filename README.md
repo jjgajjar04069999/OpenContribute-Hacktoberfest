@@ -7,3 +7,7 @@ Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting in
 This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
 
 # Steps To Contribute
+#### Here are 2 quick and painless ways to contribute to this project:
+* Add your name to the CONTRIBUTORS.md file
+* Create a simple "Hello, World" script in a language of your choice
+Choose one or all 2, make a pull request for your work and wait for it to be merged!**
